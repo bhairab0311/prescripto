@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import "tailwindcss";
+
+
+*{
+  font-family: Outfit;
+}
+.bg-primary{
+  background-color: #5f6FFF;
+}
+.text-primary{
+  color: #5f6fff;
+}
+
+.hover-bg-primary:hover {
+  background-color: #5f6FFF;
+  /* color: white; /* optional */
+  /* transition: all 0.3s;  */
+}
+
+.active hr{
+   @apply block
+}
+
+::-webkit-scrollbar{
+  @apply hidden
+}
+
+@media (max-width: 740px) {
+  .active p {
+    color: white;
+    background-color: #5f6FFF;
+  }
+}
